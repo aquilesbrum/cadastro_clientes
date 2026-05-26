@@ -1,0 +1,267 @@
+/* =========================
+   ESTILO GERAL DA PÁGINA
+========================= */
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f6f9;
+
+    margin: 0;
+
+    padding: 30px;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.container{
+
+    background-color: white;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   TÍTULO
+========================= */
+h1{
+
+    text-align: center;
+
+    color: #333;
+
+    margin-bottom: 30px;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+.formulario{
+
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+/* =========================
+   CAMPOS
+========================= */
+.campo{
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* =========================
+   TAMANHO DOS CAMPOS
+========================= */
+
+/* Primeira linha */
+.nome{
+    grid-column: span 12;
+}
+
+/* Segunda linha */
+.cpf{
+    grid-column: span 2;
+}
+
+.rg{
+    grid-column: span 2;
+}
+
+.dataNascimento{
+    grid-column: span 2;
+}
+
+.telefone{
+    grid-column: span 2;
+}
+
+.whatsapp{
+    grid-column: span 2;
+}
+
+.email{
+    grid-column: span 2;
+}
+
+/* Terceira linha */
+.logradouro{
+    grid-column: span 6;
+}
+
+.numero{
+    grid-column: span 2;
+}
+
+.complemento{
+    grid-column: span 4;
+}
+
+/* Quarta linha */
+.bairro{
+    grid-column: span 4;
+}
+
+.cidade{
+    grid-column: span 4;
+}
+
+.uf{
+    grid-column: span 2;
+}
+
+.cep{
+    grid-column: span 2;
+}
+
+/* =========================
+   LABELS
+========================= */
+label{
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+    color: #444;
+}
+
+/* =========================
+   INPUTS
+========================= */
+input{
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar */
+input:focus{
+
+    outline: none;
+
+    border-color: #007bff;
+
+    box-shadow: 0px 0px 5px rgba(0,123,255,0.4);
+}
+
+/* =========================
+   ÁREA DO BOTÃO
+========================= */
+.area-botao{
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+button{
+
+    background-color: #007bff;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+/* Hover botão */
+button:hover{
+
+    background-color: #0056b3;
+}
+
+/* =========================
+   TABELA
+========================= */
+table{
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+}
+
+/* Cabeçalho */
+th{
+
+    background-color: #007bff;
+
+    color: white;
+
+    padding: 15px;
+}
+
+/* Células */
+td{
+
+    padding: 12px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ddd;
+}
+
+/* Zebra na tabela */
+tr:nth-child(even){
+
+    background-color: #f9f9f9;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media(max-width: 768px){
+
+    .formulario{
+
+        grid-template-columns: 1fr;
+    }
+
+    .campo{
+
+        grid-column: span 12 !important;
+    }
+}
